@@ -34,7 +34,11 @@
     "url": "https://github.com/alexeiskachykhin/png-chunk-itxt/issues"
   },
   "devDependencies": {
+    "@types/node": "^22.1.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "binary-parser": "^2.2.1"
   }
 }
