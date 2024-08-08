@@ -1,0 +1,40 @@
+{
+  "name": "png-chunk-itxt",
+  "version": "1.0.0",
+  "description": "Create or parse a PNG iTXt chunk for storing unicode text data in PNG images",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags"
+  },
+  "author": "Alexei Skachykhin",
+  "license": "MIT",
+  "keywords": [
+    "encode",
+    "decode",
+    "iTXt",
+    "chunk",
+    "png",
+    "image",
+    "metadata"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexeiskachykhin/png-chunk-itxt.git"
+  },
+  "homepage": "https://github.com/alexeiskachykhin/png-chunk-itxt",
+  "bugs": {
+    "url": "https://github.com/alexeiskachykhin/png-chunk-itxt/issues"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}
