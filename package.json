@@ -1,7 +1,7 @@
 {
   "name": "png-chunk-itxt",
   "version": "1.0.0",
-  "description": "Create or parse a PNG iTXt chunk for storing unicode text data in PNG images",
+  "description": "Create or parse a PNG iTXt chunk that stores unicode text data in PNG images",
   "main": "dist/index.js",
   "files": [
     "dist",
