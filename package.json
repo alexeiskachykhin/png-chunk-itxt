@@ -13,7 +13,8 @@
     "prebuild": "npm run clean && npm run lint",
     "build": "tsc",
     "preversion": "npm run build",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "test": "mocha --require ts-node/register test/*.ts"
   },
   "author": "Alexei Skachykhin",
   "license": "MIT",
@@ -35,8 +36,11 @@
     "url": "https://github.com/alexeiskachykhin/png-chunk-itxt/issues"
   },
   "devDependencies": {
+    "@types/mocha": "^10.0.7",
     "@types/node": "^22.1.0",
+    "mocha": "^10.7.3",
     "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },
   "dependencies": {
