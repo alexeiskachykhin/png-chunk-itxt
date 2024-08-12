@@ -71,3 +71,10 @@ fs.writeFileSync("test-out.png", Buffer.from(encode(chunks)));
 - [png-chunks-extract](https://github.com/hughsk/png-chunks-extract)
 - [png-chunks-encode](https://github.com/hughsk/png-chunks-encode)
 - [png-chunk-text](https://github.com/hughsk/png-chunk-text)
+
+## Release
+
+```
+npm version <patch|minor|major>
+npm publish
+```
