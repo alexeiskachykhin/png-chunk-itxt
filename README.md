@@ -52,15 +52,15 @@ const iTxtChunk = {
     compressionMethod: 0,
     languageTag: "",
     translatedKeyword: "",
-    text: "Your text metadata",
-  }),
+    text: "Your text metadata"
+  })
 };
 
 // Insert iTXt chunk before the first IDAT chunk
 chunks.splice(
-  chunks.findIndex((p) => p.name === "IDAT"),
+  chunks.findIndex(p => p.name === "IDAT"),
   0,
-  iTxtChunk,
+  iTxtChunk
 );
 
 fs.writeFileSync("test-out.png", Buffer.from(encode(chunks)));
